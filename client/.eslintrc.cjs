@@ -6,8 +6,11 @@ module.exports = {
   extends: [
     "plugin:vue/vue3-essential",
     "eslint:recommended",
-    "@vue/eslint-config-prettier",
   ],
+  rules: {
+    "vue/multi-word-component-names": "off",
+    'vue/no-unused-vars': 'off',
+  },
   overrides: [
     {
       files: ["cypress/e2e/**.{cy,spec}.{js,ts,jsx,tsx}"],
